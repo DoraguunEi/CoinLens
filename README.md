@@ -1,6 +1,6 @@
 # COINLENS
 
-Currently deployed via Heroku @ https://pacific-thicket-95002.herokuapp.com/
+Currently deployed via Heroku @ https://coinlens.herokuapp.com/
 
 Build version: 0.0  
 Ruby version: 2.5.0  
