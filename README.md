@@ -1,10 +1,10 @@
-# README
+# COINLENS
 
 Currently deployed via Heroku @ https://pacific-thicket-95002.herokuapp.com/
 
-Build version: 0.0
-Ruby version: 2.5.0
-Databse: PostgreSQL
+>Build version: 0.0
+>Ruby version: 2.5.0
+>Databse: PostgreSQL
 
 **Abstract**:
 CoinLens is a web-application platform that will tie in traditional stock market investment holdings with new cryptocurrency investment holdings. Our platform will provide users with a portfolio tracking service for both stocks and cryptocurrencies where they can easily view and analyze the performance of their investment portfolios. Some of the basic features include: the ability to track specific stocks and cryptocurrencies in a watchlist, enter and import transactional data from stock and cryptocurrency exchanges to update their portfolio holdings, calculate their portfolio worth, view charts for various stocks and cryptocurrencies, and display and analyze historical portfolio performance. We will also integrate an online discussion board that will allow users to ask and answer questions, share their portfolios, receive constructive feedback on their portfolios, or simply engage in discussion with other investors. As cryptocurrencies is a relatively new form of investment, our focus is to integrate this into a platform that traditional stock market investors are used to without overwhelming the user with too much information. All of these features will be tied together in a simple, clean user interface, allowing ease-of-use with the click of just a few buttons.
