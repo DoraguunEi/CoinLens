@@ -41,12 +41,6 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | #{@base_title}"
   end
 
-  test "should get register" do
-    get register_path
-    assert_response :success
-    assert_select "title", "Register | #{@base_title}"
-  end
-
   test "should get login" do
     get login_path
     assert_response :success

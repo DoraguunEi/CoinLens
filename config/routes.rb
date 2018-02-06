@@ -10,9 +10,9 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'pages#contact'
 
-  get '/register', to: 'pages#register'
-
   get '/login', to: 'pages#login'
 
   get '/news', to: 'pages#news'
+
+  get '/register', to: 'users#register'
 end
