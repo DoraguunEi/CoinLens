@@ -5,52 +5,57 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   def setup
     @base_title = "CoinLens"
   end
-
+=begin
   test "should get root" do
     get pages_home_url
     assert_response :success
   end
-
+=end
   test "should get home" do
-    get pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "#{@base_title}"
   end
 
   test "should get about" do
-    get pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
 
   test "should get features" do
-    get pages_features_url
+    get features_path
     assert_response :success
     assert_select "title", "Features | #{@base_title}"
   end
 
   test "should get faq" do
-    get pages_faq_url
+    get faq_path
     assert_response :success
     assert_select "title", "FAQ | #{@base_title}"
   end
 
   test "should get contact" do
-    get pages_contact_url
+    get contact_path
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
 
   test "should get register" do
-    get pages_register_url
+    get register_path
     assert_response :success
     assert_select "title", "Register | #{@base_title}"
   end
 
   test "should get login" do
-    get pages_login_url
+    get login_path
     assert_response :success
     assert_select "title", "Login | #{@base_title}"
   end
 
+  test "should get news" do
+    get news_path
+    assert_response :success
+    assert_select "title", "News | #{@base_title}"
+  end
 end

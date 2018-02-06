@@ -1,18 +1,18 @@
 Rails.application.routes.draw do
   root 'pages#home'
   #root 'welcome#index'
-  
-  get 'pages/home'
 
-  get 'pages/about'
+  get '/about', to: 'pages#about'
 
-  get 'pages/features'
+  get '/features', to: 'pages#features'
 
-  get 'pages/faq'
+  get '/faq', to: 'pages#faq'
 
-  get 'pages/contact'
+  get '/contact', to: 'pages#contact'
 
-  get 'pages/register'
+  get '/register', to: 'pages#register'
 
-  get 'pages/login'
+  get '/login', to: 'pages#login'
+
+  get '/news', to: 'pages#news'
 end
