@@ -11,5 +11,4 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Register | #{@base_title}"
   end
-
 end
