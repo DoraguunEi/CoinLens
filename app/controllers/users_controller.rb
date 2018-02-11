@@ -4,18 +4,19 @@ class UsersController < ApplicationController
   	#debugger
   end
 
-  def register
+  def new
   	@user = User.new
   end
 
   def create
   	@user = User.new(user_params)
   	if @user.save
+      log_in @user
   		flash[:success] = "Thank you for joining CoinLens."
   		redirect_to @user
   		# successful
   	else
-  		render 'register'
+  		render 'new'
   	end
   end
 
