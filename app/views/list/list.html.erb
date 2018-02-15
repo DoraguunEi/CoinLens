@@ -1,2 +1,29 @@
 
 <h1>This is where user store its list of coins</h1>
+<table>
+<form>
+	<tr>
+		<tr>Add A Coin</tr>
+		<br>
+			<input type="text" name="AddedCoin">
+		<br>
+		<tr>Remove A Coin</tr>
+		<br>
+		  <input type="text" name="RemoveCoin">
+    </tr>
+</form>
+
+<% CoinType.all.each do |coins| %>
+	<tr>
+		<td><%= coins.name%></td>
+		<td><%= coins.amount%></td>
+		<td><%= coins.price%></td>
+		<td><%= coins.total%></td>
+		<td><%= link_to "Destroy",coin,method: :delete%></td>
+		<td><%= link_to "Edit",coin,edit_coin_path(coin)%></td>
+	</tr>
+<%end%>
+
+</table>
+
+

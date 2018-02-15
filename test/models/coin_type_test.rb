@@ -23,5 +23,8 @@ class CoinTypeTest < ActiveSupport::TestCase
   #Telling that the coin type belongs to the list			
   belongs_to :list
  
+ def coins
+ 	@coin = CoinType.new(Name:"",Amount:"",Price:"",Total:"")
+ end
 
 end
