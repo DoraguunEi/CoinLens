@@ -1,0 +1,2 @@
+class CoinType < ApplicationRecord
+end
