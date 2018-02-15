@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'testing/index'
+
   get 'sessions/new'
 
   #root 'welcome#index'
