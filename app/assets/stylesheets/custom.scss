@@ -179,3 +179,19 @@ input {
 .welcomemsg {
 	text-align: center;
 }
+
+.bold {
+	font-weight: bold;
+}
+
+/* For multicolumns */
+.column {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
