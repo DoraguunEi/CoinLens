@@ -24,7 +24,4 @@ class PagesController < ApplicationController
   def news
   end
 
-  def forum
-  end
-
 end

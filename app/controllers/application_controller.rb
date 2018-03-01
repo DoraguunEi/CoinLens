@@ -2,6 +2,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  def forum_path
+    "/forum"
+  end
+
+  helper_method :forum_path
+
   protected
 
   def configure_permitted_parameters

@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   get     '/faq',       to: 'pages#faq'
   get     '/contact',   to: 'pages#contact'
   get     '/news',      to: 'pages#news'
-  get     '/forum',	to: 'pages#forum'
 
 
 
