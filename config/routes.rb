@@ -1,9 +1,11 @@
-Rails.application.routes.draw do
-  get 'sessions/new'
-
-  #root 'welcome#index'
-  root 'pages#home'
-
+Rails.application.routes.draw do  
+  root to: 'home#show'
+  scope path: 'admin' do
+    authenticate :user, lambda { |u| u.admin? } do
+      mount RailsEmailPreview::Engine, at: 'emails'
+    end
+  end
+  
   #static pages
   get     '/about',     to: 'pages#about'
   get     '/features',  to: 'pages#features'
@@ -11,12 +13,9 @@ Rails.application.routes.draw do
   get     '/contact',   to: 'pages#contact'
   get     '/news',      to: 'pages#news'
 
-  #users
-  get     '/register',  to: 'users#new'
-  resources :users
 
-  #login session
-  get     '/login',     to: 'sessions#new'
-  post    '/login',     to: 'sessions#create'
-  delete  '/logout',    to: 'sessions#destroy' 
+  devise_for :users
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users, only: [:show]
+  mount Thredded::Engine => '/forum'
 end
