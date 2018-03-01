@@ -2,6 +2,8 @@
   <span class="app-nav-auth">
     <%= link_to "Home", main_app.root_path %>
     |
+    <%= link_to "About", main_app.about_path %>
+    |
     <%= link_to "Features", main_app.features_path %>
     |
     <%= link_to "FAQ", main_app.faq_path %>
@@ -17,7 +19,7 @@
         <%= link_to t('nav.sign_in'), main_app.new_user_session_path %>
     <% end %>
     |
-    <%= link_to "Forum", "~/forum" %>
+    <%= link_to "Forum",  %>
   </span>
   <a class="app-nav-logo" href="/"><%= t 'brand.name' %></a>
   <div class="app-nav-theme">
